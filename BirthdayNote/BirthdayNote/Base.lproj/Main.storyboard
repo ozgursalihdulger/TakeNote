@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Takvim ve Planlar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TP-8E-DnF">
+                                <rect key="frame" x="35" y="100" width="322" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="gcY-QJ-q1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemPinkColor"/>
+                                <color key="shadowColor" systemColor="systemPinkColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tarih:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vJ-yH-auT">
+                                <rect key="frame" x="35" y="417" width="322" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hdc-0B-9yk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tarihi Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-3w-y8B">
+                                <rect key="frame" x="61" y="186" width="271.33333333333331" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dNG-2f-cJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Planlarınızı Yazınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-b3-r2K">
+                                <rect key="frame" x="61" y="253" width="271.33333333333331" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FK5-Cs-eEH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Plan:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-Tw-1Ke">
+                                <rect key="frame" x="35" y="503" width="322" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukx-sK-Hvs">
+                                <rect key="frame" x="141" y="352" width="110" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Hhz-H1-bdW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="KAYDET"/>
+                                <connections>
+                                    <action selector="buton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kXI-0o-mFF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0ct-3w-y8B" firstAttribute="top" secondItem="4TP-8E-DnF" secondAttribute="bottom" constant="33" id="1jZ-jh-FEa"/>
+                            <constraint firstItem="4TP-8E-DnF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="3LT-Sh-aNo"/>
+                            <constraint firstItem="4TP-8E-DnF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="5Mj-4d-z1M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xdp-Tw-1Ke" secondAttribute="bottom" constant="255" id="8uD-Ag-BoY"/>
+                            <constraint firstItem="4TP-8E-DnF" firstAttribute="leading" secondItem="5vJ-yH-auT" secondAttribute="leading" id="9jt-Xi-E0K"/>
+                            <constraint firstItem="ukx-sK-Hvs" firstAttribute="top" secondItem="c7G-b3-r2K" secondAttribute="bottom" constant="64" id="Kgs-Ty-FDV"/>
+                            <constraint firstItem="c7G-b3-r2K" firstAttribute="centerX" secondItem="ukx-sK-Hvs" secondAttribute="centerX" id="MhH-mP-Bt8"/>
+                            <constraint firstItem="5vJ-yH-auT" firstAttribute="top" secondItem="ukx-sK-Hvs" secondAttribute="bottom" constant="31" id="Nc2-uN-S03"/>
+                            <constraint firstItem="ukx-sK-Hvs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="Q1I-an-l7i"/>
+                            <constraint firstItem="5vJ-yH-auT" firstAttribute="leading" secondItem="Xdp-Tw-1Ke" secondAttribute="leading" id="RXh-Sz-TLs"/>
+                            <constraint firstItem="0ct-3w-y8B" firstAttribute="trailing" secondItem="c7G-b3-r2K" secondAttribute="trailing" id="acg-hP-1Cc"/>
+                            <constraint firstItem="Xdp-Tw-1Ke" firstAttribute="top" secondItem="5vJ-yH-auT" secondAttribute="bottom" constant="26" id="mFa-om-xL4"/>
+                            <constraint firstItem="0ct-3w-y8B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="mfH-iD-hcp"/>
+                            <constraint firstItem="0ct-3w-y8B" firstAttribute="leading" secondItem="c7G-b3-r2K" secondAttribute="leading" id="ncN-9y-0Ym"/>
+                            <constraint firstItem="5vJ-yH-auT" firstAttribute="trailing" secondItem="Xdp-Tw-1Ke" secondAttribute="trailing" id="rDe-Ha-Bvw"/>
+                            <constraint firstItem="c7G-b3-r2K" firstAttribute="top" secondItem="0ct-3w-y8B" secondAttribute="bottom" constant="33" id="tPd-OY-eaN"/>
+                            <constraint firstItem="4TP-8E-DnF" firstAttribute="centerX" secondItem="0ct-3w-y8B" secondAttribute="centerX" id="vSz-6N-PsJ"/>
+                            <constraint firstItem="4TP-8E-DnF" firstAttribute="trailing" secondItem="5vJ-yH-auT" secondAttribute="trailing" id="ynD-j2-4Cz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="girilenTarih" destination="0ct-3w-y8B" id="jt1-TX-FGk"/>
+                        <outlet property="sonucPlan" destination="Xdp-Tw-1Ke" id="8SY-k5-ojx"/>
+                        <outlet property="sonucTarih" destination="5vJ-yH-auT" id="VhF-Ph-2PS"/>
+                        <outlet property="yazilanPlan" destination="c7G-b3-r2K" id="Pw5-V0-VeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
